@@ -28,14 +28,14 @@
             <div class="panel-heading" role="tab" id="headingOne">
               <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Create S3 bucket
+                  Task 1: Create S3 bucket
                 </a>
               </h4>
             </div>
             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
                 <ol>
-                  <li>Visit <a href="https://console.aws.amazon.com/s3/home?region=us-east-1">https://console.aws.amazon.com/s3/home?region=us-east-1</a></li>
+                  <li>Visit <a href="https://console.aws.amazon.com/s3/home?region=us-east-1" target="blank">https://console.aws.amazon.com/s3/home?region=us-east-1</a></li>
                   <li>Click <strong>Create bucket</strong> button<img src="./exercise2_1.png" class="img-responsive"></li>
                   <li>Set a <strong>Bucket name</strong> and select US East (N. Virginia) <strong>Region</strong><img src="./exercise2_2.png" class="img-responsive"></li>
                   <li>Stay with the defaults<img src="./exercise2_3.png" class="img-responsive"></li>
@@ -49,18 +49,18 @@
             <div class="panel-heading" role="tab" id="headingTwo">
               <h4 class="panel-title">
                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Create IAM Policy that allows read only access to the created bucket
+                  Task 2: Create IAM Policy that allows read only access to the created bucket
                 </a>
               </h4>
             </div>
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
               <div class="panel-body">
                 <ol>
-                  <li>Visit <a href="https://console.aws.amazon.com/iam/home#/policies">https://console.aws.amazon.com/iam/home#/policies</a></li>
+                  <li>Visit <a href="https://console.aws.amazon.com/iam/home#/policies" target="blank">https://console.aws.amazon.com/iam/home#/policies</a></li>
                   <li>Get some inspiration! Search for s3 and see what's already created by AWS. <strong>AmazonS3ReadOnlyAccess</strong> sounds good. Check it out, click on the name.<img src="./exercise2_6.png" class="img-responsive"></li>
                   <li><img src="./exercise2_7.png" class="img-responsive"></li>
                   <li>The policy allows access to all buckets <code>"Resource": "*"</code>. Copy the policy, this is a good starting point.<img src="./exercise2_8.png" class="img-responsive"></li>
-                  <li>Visit <a href="https://console.aws.amazon.com/iam/home#/policies">https://console.aws.amazon.com/iam/home#/policies</a></li>
+                  <li>Visit <a href="https://console.aws.amazon.com/iam/home#/policies" target="blank">https://console.aws.amazon.com/iam/home#/policies</a></li>
                   <li>Click <strong>Create policy</strong> button<img src="./exercise2_9.png" class="img-responsive"></li>
                   <li><img src="./exercise2_10.png" class="img-responsive"></li>
                   <li><ul>
