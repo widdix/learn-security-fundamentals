@@ -19,7 +19,7 @@
       <div class="row">
         <ol class="breadcrumb">
           <li><a href="./index.html">Home</a></li>
-          <li class="active">Exercise 4: Encrypt at Rest</li>
+          <li class="active">Exercise 4: Encrypt Data at Rest</li>
         </ol>
         <p>Expected duration: ~10 minutes.</p>
         <div class="alert alert-info" role="alert">Click on a task to get hints.</div>
@@ -35,16 +35,16 @@
             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
                 <ol>
-                  <li>It's not possible to create a bucket with SS3 encryption turned on. Instead you have to use a bucket policy to only allow uploads that turn on the SSE encryption feature.</li>
+                  <li>Okay, this exercise is hard. It's not possible to create a bucket with SS3 encryption turned on. Sometimes you have to think outside the box. You have to use a bucket policy to only allow uploads that turn on the SSE encryption feature. </li>
                   <li>Visit <a href="https://console.aws.amazon.com/s3/home?region=us-east-1" target="blank">https://console.aws.amazon.com/s3/home?region=us-east-1</a></li>
                   <li>Click on the bucket you created during exercise 2.</li>
-                  <li>Select <strong>Permissions</strong> tab<img src="./exercise4_1.png" class="img-responsive"></li>
-                  <li>Click <strong>Bucket Policy</strong> button<img src="./exercise4_2.png" class="img-responsive"></li>
+                  <li>Select <strong>Permissions</strong> tab<br><img src="./exercise4_1.png" class="img-thumbnail img-responsive"></li>
+                  <li>Click <strong>Bucket Policy</strong> button<br><img src="./exercise4_2.png" class="img-thumbnail img-responsive"></li>
                   <li><ul>
-                    <li>If you could deny all uploads <code>s3:PutObject</code> that would do the trick. <a href="https://iam.cloudonaut.io/reference/s3/PutObject.html" target="blank">Checkout</a> what's available for the <code>s3:PutObject</code> action.</li>
+                    <li>If you could deny all unencrypted uploads <code>s3:PutObject</code> that would do the trick. <a href="https://iam.cloudonaut.io/reference/s3/PutObject.html" target="blank">Checkout</a> what's available for the <code>s3:PutObject</code> action.</li>
                     <li>the Service Specific Condition <code>s3:x-amz-server-side-encryption</code> sounds interesting. Maybe <a href="https://www.google.com/search?q=s3%3Ax-amz-server-side-encryption" target="blank">Google</a> can help?</li>
                     <li><code>AES256</code> means that S3-Managed Encryption Keys should be used</li>
-                    <li>The bucket policy has a higher priority than your IAM authorization information!<img src="./exercise4_3.png" class="img-responsive"></li>
+                    <li>The bucket policy has a higher priority than your IAM authorization information!<br><img src="./exercise4_3.png" class="img-thumbnail img-responsive"></li>
                   </ul></li>
                 </ol>
               </div>
@@ -60,7 +60,7 @@
             </div>
             <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
               <div class="panel-body">
-                No hints.
+                Use the Management Console to upload with encryption turned on and off.
               </div>
             </div>
           </div>

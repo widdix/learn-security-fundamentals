@@ -36,11 +36,11 @@
               <div class="panel-body">
                 <ol>
                   <li>Visit <a href="https://console.aws.amazon.com/s3/home?region=us-east-1" target="blank">https://console.aws.amazon.com/s3/home?region=us-east-1</a></li>
-                  <li>Click <strong>Create bucket</strong> button<img src="./exercise2_1.png" class="img-responsive"></li>
-                  <li>Set a <strong>Bucket name</strong> and select US East (N. Virginia) <strong>Region</strong><img src="./exercise2_2.png" class="img-responsive"></li>
-                  <li>Stay with the defaults<img src="./exercise2_3.png" class="img-responsive"></li>
-                  <li>Stay with the defaults<img src="./exercise2_4.png" class="img-responsive"></li>
-                  <li>Review<img src="./exercise2_5.png" class="img-responsive"></li>
+                  <li>Click <strong>Create bucket</strong> button<br><img src="./exercise2_1.png" class="img-thumbnail img-responsive"></li>
+                  <li>Set a <strong>Bucket name</strong> and select US East (N. Virginia) <strong>Region</strong>. The bucket name must be globally unique across all AWS users in all regions (I added my name as a suffix). <br><img src="./exercise2_2.png" class="img-thumbnail img-responsive"></li>
+                  <li>Stay with the defaults<br><img src="./exercise2_3.png" class="img-thumbnail img-responsive"></li>
+                  <li>Stay with the defaults<br><img src="./exercise2_4.png" class="img-thumbnail img-responsive"></li>
+                  <li>Review<br><img src="./exercise2_5.png" class="img-thumbnail img-responsive"></li>
                 </ol>
               </div>
             </div>
@@ -57,19 +57,19 @@
               <div class="panel-body">
                 <ol>
                   <li>Visit <a href="https://console.aws.amazon.com/iam/home#/policies" target="blank">https://console.aws.amazon.com/iam/home#/policies</a></li>
-                  <li>Get some inspiration! Search for s3 and see what's already created by AWS. <strong>AmazonS3ReadOnlyAccess</strong> sounds good. Check it out, click on the name.<img src="./exercise2_6.png" class="img-responsive"></li>
-                  <li><img src="./exercise2_7.png" class="img-responsive"></li>
-                  <li>The policy allows access to all buckets <code>"Resource": "*"</code>. Copy the policy, this is a good starting point.<img src="./exercise2_8.png" class="img-responsive"></li>
+                  <li>Get some inspiration! Search for s3 and see what's already created by AWS. <strong>AmazonS3ReadOnlyAccess</strong> sounds good. Check it out, click on the name.<br><img src="./exercise2_6.png" class="img-thumbnail img-responsive"></li>
+                  <li><br><img src="./exercise2_7.png" class="img-thumbnail img-responsive"></li>
+                  <li>The policy allows access to all buckets <code>"Resource": "*"</code>. Copy the policy, this is a good starting point.<br><img src="./exercise2_8.png" class="img-thumbnail img-responsive"></li>
                   <li>Visit <a href="https://console.aws.amazon.com/iam/home#/policies" target="blank">https://console.aws.amazon.com/iam/home#/policies</a></li>
-                  <li>Click <strong>Create policy</strong> button<img src="./exercise2_9.png" class="img-responsive"></li>
-                  <li><img src="./exercise2_10.png" class="img-responsive"></li>
+                  <li>Click <strong>Create policy</strong> button<br><img src="./exercise2_9.png" class="img-thumbnail img-responsive"></li>
+                  <li><br><img src="./exercise2_10.png" class="img-thumbnail img-responsive"></li>
                   <li><ul>
                     <li>Set a <strong>Policy Name</strong>, <strong>Description</strong>, and paste the <strong>Policy Document</strong>.</li>
                     <li><code>"Resource": "*"</code> allows access to all buckets, but you should only grant access to the bucket you created.</li>
                     <li>You have to provide a ARN, but how does the ARN look like? It's time to consult the <a href="http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-s3" target="blank">AWS docs</a>.</li>
                     <li>You also have two <code>*</code> in your Action section. <a href="https://iam.cloudonaut.io/reference/s3.html" target="blank">Checkout what's behind</a> the star and also, if the ARNs are allowed for all <code>Get*</code> and <code>List*</code> actions.</li>
-                    <li><code>s3:ListAllMyBuckets</code> only supports <code>*</code> as a resource-level constraint. So you have to add this in a separate statement.</li>
-                    <li><img src="./exercise2_11.png" class="img-responsive"></li>
+                    <li><code>s3:ListAllMyBuckets</code> only supports <code>*</code> as a resource-level constraint. So you can't use the So you have to add this in a separate statement.</li>
+                    <li>The final policy is shown here<br><br><img src="./exercise2_11.png" class="img-thumbnail img-responsive"></li>
                   </ul></li>
                 </ol>
               </div>

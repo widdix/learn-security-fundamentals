@@ -21,7 +21,7 @@
           <li><a href="./index.html">Home</a></li>
           <li class="active">Exercise 1: IAM User</li>
         </ol>
-        <p>Expected duration: ~10 minutes.</p>
+        <p>Expected duration: ~15 minutes.</p>
         <div class="alert alert-info" role="alert">Click on a task to get hints.</div>
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
           <div class="panel panel-default">
@@ -36,11 +36,11 @@
               <div class="panel-body">
                 <ol>
                   <li>Visit <a href="https://console.aws.amazon.com/iam/home#/users" target="blank">https://console.aws.amazon.com/iam/home#/users</a></li>
-                  <li>Click <strong>Add user</strong> button<img src="./exercise1_1.png" class="img-responsive"></li>
-                  <li>Set <strong>User name</strong>, enable <strong>Programmatic access</strong> to generate an Access Key, enable <strong>AWS Management Console access</strong> to create a Login Profile<img src="./exercise1_2.png" class="img-responsive"></li>
-                  <li>Manage the IAM Group later<img src="./exercise1_3.png" class="img-responsive"></li>
-                  <li>Review your input<img src="./exercise1_4.png" class="img-responsive"></li>
-                  <li>Copy and paste the sign-in link, your password and access key id &amp; secret into a file on your machine for later use<img src="./exercise1_5.png" class="img-responsive"></li>
+                  <li>Click <strong>Add user</strong> button<br><img src="./exercise1_1.png" class="img-thumbnail img-responsive"></li>
+                  <li>Set <strong>User name</strong>, enable <strong>Programmatic access</strong> to generate an Access Key, enable <strong>AWS Management Console access</strong> to create a Login Profile<br><img src="./exercise1_2.png" class="img-thumbnail img-responsive"></li>
+                  <li>Skip permissions as you will add them later<br><img src="./exercise1_3.png" class="img-thumbnail img-responsive"></li>
+                  <li>Review your input<br><img src="./exercise1_4.png" class="img-thumbnail img-responsive"></li>
+                  <li>Copy and paste the sign-in link, your password and access key id &amp; secret into a file on your machine or download the CSV file for later use<br><img src="./exercise1_5.png" class="img-thumbnail img-responsive"></li>
                   <li>Use the sign-in link to test your IAM user in a different browser</li>
                 </ol>
               </div>
@@ -58,19 +58,19 @@
               <div class="panel-body">
                 <ol>
                   <li>Visit <a href="https://console.aws.amazon.com/iam/home#/users" target="blank">https://console.aws.amazon.com/iam/home#/users</a></li>
-                  <li>Click your user name<img src="./exercise1_6.png" class="img-responsive"></li>
-                  <li>Select <strong>Security Credentials</strong> tab, click the pencil icon next to <strong>Assigned MFA device</strong><img src="./exercise1_7.png" class="img-responsive"></li>
-                  <li><img src="./exercise1_8.png" class="img-responsive"></li>
-                  <li><img src="./exercise1_9.png" class="img-responsive"></li>
-                  <li><img src="./exercise1_10.png" class="img-responsive"></li>
+                  <li>Click your user name<br><img src="./exercise1_6.png" class="img-thumbnail img-responsive"></li>
+                  <li>Select <strong>Security Credentials</strong> tab, click the pencil icon next to <strong>Assigned MFA device</strong><br><img src="./exercise1_7.png" class="img-thumbnail img-responsive"></li>
+                  <li>You are going to use the Google Authenticator app (a virtual device), choose <strong>A virtual MFA device</strong><br><img src="./exercise1_8.png" class="img-thumbnail img-responsive"></li>
+                  <li>You are asked if you have already installed a virtual device. You can acknowledged that because you will do it in the next step.<br><img src="./exercise1_9.png" class="img-thumbnail img-responsive"></li>
                   <li>Install Google Authenticator on your mobile device:<ul>
                     <li><a href="https://itunes.apple.com/de/app/google-authenticator/id388497605?mt=8" target="blank">iTunes App Store</a></li>
                     <li><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2" target="blank">Google Play Store</a></li>
                   </ul></li>
-                  <li>Open Google Authenticator and add a new token by scanning the QR code in your browser window<img src="./exercise1_11.png" class="img-responsive"></li>
-                  <li>Enter the first token and wait until a new token is generated. Enter the second token as well<img src="./exercise1_12.png" class="img-responsive"></li>
-                  <li><img src="./exercise1_13.png" class="img-responsive"></li>
-                  <li>Use the sign-in link to test your IAM user in a different browser. THis time with MFA enabled.</li>
+                  <li>Now, you have enter two token generated with Google Authenticator.<br><img src="./exercise1_10.png" class="img-thumbnail img-responsive"></li>
+                  <li>Open Google Authenticator and add a new token by scanning the QR code in your browser window<br><img src="./exercise1_11.png" class="img-thumbnail img-responsive"></li>
+                  <li>Enter the first token and wait until a new token is generated. Enter the second token as well. Click <strong>Activate Virtual MFA</strong>.<br><img src="./exercise1_12.png" class="img-thumbnail img-responsive"></li>
+                  <li>Success!<br><img src="./exercise1_13.png" class="img-thumbnail img-responsive"></li>
+                  <li>Use the sign-in link to test your IAM user in a different browser. This time with MFA enabled.</li>
                 </ol>
               </div>
             </div>
@@ -87,7 +87,7 @@
               <div class="panel-body">
                 <ol>
                   <li>Visit <a href="https://console.aws.amazon.com/iam/home#/account_settings" target="blank">https://console.aws.amazon.com/iam/home#/account_settings</a></li>
-                  <li><img src="./exercise1_14.png" class="img-responsive"></li>
+                  <li>Here you can set the password policy<br><img src="./exercise1_14.png" class="img-thumbnail img-responsive"></li>
                 </ol>
               </div>
             </div>
@@ -102,7 +102,7 @@
             </div>
             <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
               <div class="panel-body">
-                No hints.
+                No hints. How can you test your solution?
               </div>
             </div>
           </div>
