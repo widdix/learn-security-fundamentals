@@ -15,12 +15,31 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">AWS Security Fundamentals</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://cloudonaut.io/?utm_source=security-fundamentals-cloudonaut-io&utm_medium=site&utm_campaign=header">cloudonaut.io</a></li>
+            <li><a href="https://www.linkedin.com/in/michael-wittig/">LinkedIn</a></li>
+            <li><a href="https://twitter.com/hellomichibye">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="padding: 60px 15px 0;">
       <div class="row">
-        <ol class="breadcrumb">
-          <li><a href="./index.html">Home</a></li>
-          <li class="active">Clean up</li>
-        </ol>
+        <h1>Clean up</h1>
         <p>Expected duration: ~5 minutes.</p>
          <ol>
            <li>Visit <a href="https://console.aws.amazon.com/iam/home#/users" target="blank">https://console.aws.amazon.com/iam/home#/users</a></li>
